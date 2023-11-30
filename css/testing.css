@@ -58,7 +58,7 @@ html::-webkit-scrollbar {
     top: 0; left: 0; right: 0;
     padding: 2rem 9%;
     z-index: 1000;
-    display: flex;
+    display: inline-block;
     align-items: center;
     justify-content: center;
 }
@@ -261,9 +261,14 @@ padding: 1rem 0;
 
 }
 
+.home  .content button{
+    margin-top: 5rem;
+    
+    }
+
 .btn{
     align-items: center;
-    margin-top: 20rem;
+    margin-top: 2rem;
     display:inline-block;
     border: var(--border);
     color: var(--cle-white);
@@ -275,7 +280,26 @@ padding: 1rem 0;
 
 }
 
+.btn2{
+    align-items: center;
+    margin-top: 2rem;
+    
+    border: var(--border);
+    color: var(--cle-white);
+    cursor: pointer;
+    background:none ;
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+    border-color: #ffffff;
+
+}
+
 .btn:hover{
+    background: #08e900;
+    color: var(--cle-white);
+}
+
+.btn2:hover{
     background: #08e900;
     color: var(--cle-white);
 }

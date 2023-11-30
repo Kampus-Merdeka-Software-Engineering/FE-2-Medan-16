@@ -593,75 +593,56 @@
 /* FOOTER */
 /**************************/
 
-.footer {
-  padding: 12.8rem 0;
-  border-top: 1px solid #eee;
+.footer{
+  background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url(../img/city/balikpapan.jpg) no-repeat;
+  background-size: cover;
+  background-position:center ;
+  background-attachment: fixed;
 }
 
-.grid--footer {
-  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+.footer .box-container{
+  display: -ms-grid;
+display: grid;
+-ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+gap: 1.5rem;
 }
 
-.logo-col {
-  display: flex;
-  flex-direction: column;
+.footer .box-container .box h3{
+font-size: 2rem;
+padding: 1.5rem 0;
+color: var(--cle-white);
 }
 
-.footer-logo {
+.footer .box-container .box a{
   display: block;
-  margin-bottom: 3.2rem;
+  font-size: 1,4rem;
+  color: var(--cle-white);
+  padding: 1rem 0;
 }
 
-.social-links {
-  list-style: none;
-  display: flex;
-  gap: 2.4rem;
+.footer .box-container .box a i{
+  color: var(--cle-green);
+  padding-right: .5rem;
 }
 
-.social-icon {
-  height: 2.4rem;
-  width: 2.4rem;
+.footer .box-container .box a:hover{
+  color: var(--cle-green);
+}
+.footer .box-container .box a:hover i{
+  padding-right: 2rem;
 }
 
-.copyright {
-  font-size: 1.4rem;
-  line-height: 1.6;
-  color: #767676;
-  margin-top: auto;
+.credit{
+  text-align: center;
+  margin-top: 2.5rem;
+  padding: 1rem;
+  padding-top: 2.5rem;
+  font-size: 2rem;
+  color: var(--cle-white);
+
 }
 
-.footer-heading {
-  font-size: 1.8rem;
-  font-weight: 500;
-  margin-bottom: 4rem;
-}
-
-.contacts {
-  font-style: normal;
-  font-size: 1.6rem;
-  line-height: 1.6;
-}
-
-.address {
-  margin-bottom: 2.4rem;
-}
-
-.footer-nav {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 2.4rem;
-}
-
-.footer-link:link,
-.footer-link:visited {
-  text-decoration: none;
-  font-size: 1.6rem;
-  color: #767676;
-  transition: all 0.3s;
-}
-
-.footer-link:hover,
-.footer-link:active {
-  color: #555;
+.footer span{
+  color: var(--cle-green);
 }
