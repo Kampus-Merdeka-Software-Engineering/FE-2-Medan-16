@@ -19,6 +19,7 @@
 </head>
 
 <body>
+
     <header class="header">
         <a href="" class="logo"><i class="fas fa-home"></i>LivingSpace.</a>
 
@@ -59,15 +60,16 @@
         
                     <div class="second-box" id="second-box" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/pencarian/bandung.jpg) no-repeat;">
                     <div class="content">
-                        <span>WELCOME TO</span>
-                        <h3>BANDUNG</h3>
+                        <span>LIVING SPACE</span>
+                        <h3>BANDUNG UTARA</h3>
                         
                         
                     </div>
-                    <a href="" class="btn">Look For a Room</a>
+                  
                     </div>
                
     </section>
+
 
     <div class="ajukan-sewa-section"> 
         <section class="sewa" id="sewa">
@@ -90,7 +92,8 @@
                     </ol>
                 </div>
             </div>
-            
+
+
             <div class="kotak">
                 <!-- isi disini -->
                 <div class="row">
@@ -121,7 +124,7 @@
 
                             <tr>
                                 <td>
-                                <button type="submit"><strong>Cara Pembayaran</strong></button>
+                                <button type="button" onclick="togglePopup()"><strong>Cara Pembayaran</strong></button>
                                 </td>
                             </tr> 
                         </table>
@@ -130,6 +133,8 @@
             </div>
         </section>
         
+        
+
         <div class="frame">
             <div class="div">
               <div class="overlap-group">
@@ -151,50 +156,83 @@
             </div>
         </div>
     </div>
-   
 
-    <section class="footer">
-        <div class="box-container">
-            <div class="box">
-                <h3>Links</h3>
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#shop">Shop</a>
-                <a href="#packages">Packages</a>
-                <a href="#reviews">Reviews</a>
-                <a href="#blog">Blogs</a>
+    
+<!-– PopUp Button Cara Pembayaran -–>
+    <div class="popup" id="popup">
+                    <div class="popup-content">
+                        <span class="close" onclick="togglePopup()">&times;</span>
+                        <h2>Cara Pembayaran</h2>
+                        <p>1. Pilih <strong>m-Transfer > BCA Virtual Account</strong></p>
+                        <p>2. Masukkan <strong>nomor Virtual Account (7383 2763 62626)</strong> dan pilih <strong> Send </strong></p>
+                        <p>3. Masukkan <strong>nominal</strong> yang sesuai pada kost</p>
+                        <p>4. Masukkan PIN m-BCA Anda dan pilih <strong>OK</strong></p>
+                        <p>5. Screenshot Bukti Pembayaran Anda</p>
+                    </div>
             </div>
 
-            <div class="box">
-                <h3>Extra links</h3>
-                <a href="#">My account</a>
-                <a href="#">My orders</a>
-                <a href="#">My wishlist</a>
-                <a href="#">Ask questions</a>
-                <a href="#">Terms</a>
-                <a href="#">Privacy</a>
-            </div>
+            <section class="footer">
 
-            <div class="box">
-                <a href="#"><i class="fas fa-phone"></i>+123-123-1234</a>
-                <a href="#"><i class="fas fa-phone"></i>+123-123-1234</a>
-                <a href="#"><i class="fas fa-phone"></i>+123-123-1234</a>
-                <a href="#"><i class="fas fa-envelope"></i>name@gmail.com</a>
-            </div>
-
-            <div class="box">
-                <h3>Follow us</h3>
-                <a href="#"><i class="fas fa-facebook-f"></i>Facebook</a>
-                <a href="#"><i class="fas fa-twitter"></i>Twitter</a>
-                <a href="#"><i class="fas fa-instagram"></i>Instagra</a>
-                <a href="#"><i class="fas fa-linkedin"></i>LinkedIn</a>
-                <a href="#"><i class="fas fa-github"></i>Github</a>
-
-            </div>
-        </div>
-
-        <div class="credit">LivingSpace <span>Grup 16</span>| 2023</div>
-    </section>
+                <div class="rowfooter">
+            
+                    
+                    <div class="colfooter"> 
+                        <img src="logo.png" alt="logofooter" class="logofooter">
+                        <p>Living Space is a company that provides environmentally friendly and comfortable housing.</p>
+                    </div>
+            
+                    <div class="colfooter"> 
+            <h3>Office <div class="underlinefooter"><span></span></div></h3>
+            <p>Jl. Merdeka</p>
+            <p>Jakarta Selatan</p>
+            <p>DKI Jakarta, 51121</p>
+            <p class="email-idfooter"><a href="mailto:tes@contoh.com">living@space.com</a></p>
+            <h4><a href="https://wa.me/6281255556254">+62-81255556254</a></h4>
+            
+                    </div>
+            
+            
+                    <div class="colfooter">
+                        <h3>Links <div class="underlinefooter"><span></span></div></h3>
+            
+                        <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#facilities">Facilities</a></li>
+                        <li><a href="#location">Location</a></li>
+                        <li><a href="#typeourroom">Our Rooms</a></li>
+                        <li><a href="">Contact</a></li>
+                         
+            
+            
+            
+                        </ul>
+                    </div>
+            
+            
+                    <div class="colfooter">
+                        
+                    <h3>Get Good Deals <div class="underlinefooter"><span></span></div></h3>
+                    <form>
+                        <i class="far fa-envelope"></i>
+                        <input type="email" placeholder="Input Your Email" required>
+                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                    <div class="social-iconsfooter">
+                        <a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                        <a href="https://wa.me/6281255556254"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+            
+                    </div>
+            
+            
+                    </div>
+                </div>
+            
+            <hr>
+            <p class="copyrightfooter">RevoU Grup 16 © 2023</p>
+            </section>
+        
 
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
